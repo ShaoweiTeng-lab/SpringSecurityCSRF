@@ -1,6 +1,7 @@
 package com.kucw.security.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -11,7 +12,7 @@ public class MyController {
         return "Hello!";
     }
 
-    @GetMapping("/welcome")
+    @PostMapping("/welcome")
     public String welcome() {
         return "Welcome!";
     }
